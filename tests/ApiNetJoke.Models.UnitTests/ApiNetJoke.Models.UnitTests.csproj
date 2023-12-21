@@ -23,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\ApiNetJoke.Business\ApiNetJoke.Business.csproj" />
+    <ProjectReference Include="..\..\src\ApiNetJoke.Models\ApiNetJoke.Models.csproj" />
   </ItemGroup>
 
 </Project>

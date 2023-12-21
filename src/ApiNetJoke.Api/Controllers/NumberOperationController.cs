@@ -1,6 +1,7 @@
 using ApiNetJoke.Business.Interfaces;
 using ApiNetJoke.Models;
 using Microsoft.AspNetCore.Mvc;
+using System.ComponentModel.DataAnnotations;
 
 namespace ApiNetJoke.Api.Controllers
 {
@@ -16,8 +17,8 @@ namespace ApiNetJoke.Api.Controllers
             _numberOperationService = numberOperationService;
         }
 
-        [HttpPut("sort")]
-        public OrderNumberResult SortNumbers(OrderNumberRequest orderNumberRequest)
+        [HttpPost("sort")]
+        public OrderNumberResult SortNumbers([FromQuery][Required] OrderNumberRequest orderNumberRequest)
         {
             return _numberOperationService.SortNumber(orderNumberRequest);
         }

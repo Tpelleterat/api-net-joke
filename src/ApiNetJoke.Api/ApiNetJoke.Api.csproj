@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ApiNetJoke.Business\ApiNetJoke.Business.csproj" />
+    <ProjectReference Include="..\ApiNetJoke.Models\ApiNetJoke.Models.csproj" />
   </ItemGroup>
 
 </Project>
