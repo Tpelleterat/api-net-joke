@@ -1,8 +1,5 @@
 ﻿using ApiNetJoke.Business.Interfaces;
 using ApiNetJoke.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 
 namespace ApiNetJoke.Business
 {
@@ -11,34 +8,45 @@ namespace ApiNetJoke.Business
         public OrderNumberResult SortNumber(OrderNumberRequest orderNumberRequest)
         {
             IEnumerable<int> numbers = ParseNumbers(orderNumberRequest.Numbers);
+
+            IEnumerable<int> orderedNumbers = SortedList(numbers, orderNumberRequest.SortDirection);
+
+            OrderNumberResult result = CreateOrderNumberResult(orderedNumbers);
+
+            return result;
+        }
+
+        private IEnumerable<int> SortedList(IEnumerable<int> numbers, int? orderDirection)
+        {
             IEnumerable<int> orderedNumbers = new List<int>();
 
-            if (orderNumberRequest.SortDirection == 0)
+            if (orderDirection == 0)
             {
                 orderedNumbers = numbers.OrderBy(number => number);
             }
-            else if (orderNumberRequest.SortDirection == 1)
+            else if (orderDirection == 1)
             {
                 orderedNumbers = numbers.OrderByDescending(number => number);
             }
             else
             {
-                throw new ArgumentException($"Invalid order value. Expected 0 or 1. Actual {orderNumberRequest.SortDirection}");
+                throw new ArgumentException($"Invalid order value. Expected 0 or 1. Actual {orderDirection}");
             }
 
-            OrderNumberResult result = new OrderNumberResult()
+            return orderedNumbers;
+        }
+
+        private OrderNumberResult CreateOrderNumberResult(IEnumerable<int> numbers)
+        {
+            return new OrderNumberResult()
             {
-                Numbers = string.Join(',', orderedNumbers),
-                Sum = orderedNumbers.Sum(number => number)
+                Numbers = string.Join(',', numbers),
+                Sum = numbers.Sum(number => number)
             };
-
-            return result;
-
         }
 
         private IEnumerable<int> ParseNumbers(string numbers)
         {
-            // TODO : Support exceptions
             IEnumerable<int> parserNumbers = numbers.Split(",").Select(number => int.Parse(number));
 
             return parserNumbers;
