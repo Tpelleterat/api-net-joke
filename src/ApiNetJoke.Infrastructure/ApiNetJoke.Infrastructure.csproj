@@ -7,8 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ApiNetJoke.Infrastructure\ApiNetJoke.Infrastructure.csproj" />
-    <ProjectReference Include="..\ApiNetJoke.Models\ApiNetJoke.Models.csproj" />
+    <PackageReference Include="Refit" Version="7.0.0" />
   </ItemGroup>
 
 </Project>

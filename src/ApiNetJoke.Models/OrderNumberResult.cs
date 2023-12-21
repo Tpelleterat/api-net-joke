@@ -4,9 +4,9 @@ namespace ApiNetJoke.Models
 {
     public class OrderNumberResult
     {
-        public string Numbers { get; set; } = default!;
+        public required string Numbers { get; set; }
 
-        public int Sum { get; set; } = default!;
+        public required int Sum { get; set; }
 
     }
 }
