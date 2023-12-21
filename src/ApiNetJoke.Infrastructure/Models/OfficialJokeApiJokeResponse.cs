@@ -10,6 +10,10 @@
 
         public required string Punchline { get; set; }
 
+        public override string ToString()
+        {
+            return $"{Setup} {Punchline}";
+        }
 
     }
 }

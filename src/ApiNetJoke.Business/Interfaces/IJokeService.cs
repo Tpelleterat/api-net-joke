@@ -4,6 +4,6 @@ namespace ApiNetJoke.Business.Interfaces
 {
     public interface IJokeService
     {
-        Task<IEnumerable<string>> GetJokes(uint number = 1);
+        Task<IEnumerable<string>> GetJokes(int number = 1);
     }
 }

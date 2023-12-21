@@ -8,5 +8,10 @@ namespace ApiNetJoke.Infrastructure.RefitApiInterfaces
 
         [Get("/random_joke")]
         Task<OfficialJokeApiJokeResponse> RandomJoke();
+
+
+        [Get("/random_ten")]
+        Task<IEnumerable<OfficialJokeApiJokeResponse>> RandomTenJokes();
+        
     }
 }

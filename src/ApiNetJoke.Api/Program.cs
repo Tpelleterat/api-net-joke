@@ -27,7 +27,7 @@ builder.Services.AddRefitClient<IOfficialJokeApi>()
     });
 
 // Infrastructure
-builder.Services.AddScoped<IJobRequestService, JobRequestService>();
+builder.Services.AddScoped<IJokeRequestService, JokeRequestService>();
 
 // Business
 builder.Services.AddScoped<INumberOperationService, NumberOperationService>();

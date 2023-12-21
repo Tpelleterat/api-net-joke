@@ -18,7 +18,7 @@ namespace ApiNetJoke.Api.Controllers
         }
 
         [HttpGet("")]
-        public Task<IEnumerable<string>> SortNumbers([FromQuery][Range(1,10)] uint count = 1)
+        public Task<IEnumerable<string>> SortNumbers([FromQuery][Range(1, 10)] int count = 1)
         {
             return _jokeService.GetJokes(count);
         }

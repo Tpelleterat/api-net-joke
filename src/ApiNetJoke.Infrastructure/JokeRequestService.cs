@@ -4,18 +4,23 @@ using ApiNetJoke.Infrastructure.RefitApiInterfaces;
 
 namespace ApiNetJoke.Infrastructure
 {
-    public class JobRequestService : IJobRequestService
+    public class JokeRequestService : IJokeRequestService
     {
         private readonly IOfficialJokeApi _officialJokeApi;
 
-        public JobRequestService(IOfficialJokeApi officialJokeApi)
+        public JokeRequestService(IOfficialJokeApi officialJokeApi)
         {
             _officialJokeApi = officialJokeApi;
         }
 
-        public Task<OfficialJokeApiJokeResponse> GetJobs()
+        public Task<OfficialJokeApiJokeResponse> GetJoke()
         {
             return _officialJokeApi.RandomJoke();
+        }
+
+        public Task<IEnumerable<OfficialJokeApiJokeResponse>> GetTenJokes()
+        {
+            return _officialJokeApi.RandomTenJokes();
         }
     }
 }
