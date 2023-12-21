@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{0A83C4D3-55A5-4EFF-96C7-F5524DFE6A3A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiNetJoke.Api", "src\ApiNetJoke.Api\ApiNetJoke.Api.csproj", "{68D8144E-460E-4435-9756-7B143660D666}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{089C4D2A-22D3-4EA7-BF55-C59258DE0AE8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiNetJoke.Business.UnitTests", "tests\ApiNetJoke.Business.UnitTests\ApiNetJoke.Business.UnitTests.csproj", "{ABAC30A3-8322-4BD2-AD6C-3FAF4D28655A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiNetJoke.Business", "src\ApiNetJoke.Business\ApiNetJoke.Business.csproj", "{5CF36DA6-0B2C-4BBC-91D9-6954BBAE7EA2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiNetJoke.Models", "src\ApiNetJoke.Models\ApiNetJoke.Models.csproj", "{14C43B50-55CE-4BB8-AA5D-16B9644405BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiNetJoke.Models.UnitTests", "tests\ApiNetJoke.Models.UnitTests\ApiNetJoke.Models.UnitTests.csproj", "{BA6904C1-4B32-487F-A4E2-F2ABACF8112B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{68D8144E-460E-4435-9756-7B143660D666}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68D8144E-460E-4435-9756-7B143660D666}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68D8144E-460E-4435-9756-7B143660D666}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68D8144E-460E-4435-9756-7B143660D666}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABAC30A3-8322-4BD2-AD6C-3FAF4D28655A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABAC30A3-8322-4BD2-AD6C-3FAF4D28655A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABAC30A3-8322-4BD2-AD6C-3FAF4D28655A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABAC30A3-8322-4BD2-AD6C-3FAF4D28655A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CF36DA6-0B2C-4BBC-91D9-6954BBAE7EA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CF36DA6-0B2C-4BBC-91D9-6954BBAE7EA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CF36DA6-0B2C-4BBC-91D9-6954BBAE7EA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CF36DA6-0B2C-4BBC-91D9-6954BBAE7EA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14C43B50-55CE-4BB8-AA5D-16B9644405BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14C43B50-55CE-4BB8-AA5D-16B9644405BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14C43B50-55CE-4BB8-AA5D-16B9644405BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14C43B50-55CE-4BB8-AA5D-16B9644405BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA6904C1-4B32-487F-A4E2-F2ABACF8112B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA6904C1-4B32-487F-A4E2-F2ABACF8112B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA6904C1-4B32-487F-A4E2-F2ABACF8112B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA6904C1-4B32-487F-A4E2-F2ABACF8112B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{68D8144E-460E-4435-9756-7B143660D666} = {0A83C4D3-55A5-4EFF-96C7-F5524DFE6A3A}
+		{ABAC30A3-8322-4BD2-AD6C-3FAF4D28655A} = {089C4D2A-22D3-4EA7-BF55-C59258DE0AE8}
+		{5CF36DA6-0B2C-4BBC-91D9-6954BBAE7EA2} = {0A83C4D3-55A5-4EFF-96C7-F5524DFE6A3A}
+		{14C43B50-55CE-4BB8-AA5D-16B9644405BD} = {0A83C4D3-55A5-4EFF-96C7-F5524DFE6A3A}
+		{BA6904C1-4B32-487F-A4E2-F2ABACF8112B} = {089C4D2A-22D3-4EA7-BF55-C59258DE0AE8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9E93E8DF-0067-4BEC-93D7-A4791D573C0E}
+	EndGlobalSection
+EndGlobal
