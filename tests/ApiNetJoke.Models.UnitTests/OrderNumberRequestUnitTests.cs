@@ -16,12 +16,14 @@ namespace ApiNetJoke.Models.UnitTests
         [InlineData("5,,10,4", 0, false)]
         public void ModelValidation(string number, int sortDirection, bool isValid)
         {
+            // Arrange
             var orderNumberRequest = new OrderNumberRequest()
             {
                 Numbers = number,
                 SortDirection = sortDirection
             };
 
+            // Act & Assert
             if (isValid)
             {
                 Assert.Empty(ModelValidationHelper.ValidateModel(orderNumberRequest));
