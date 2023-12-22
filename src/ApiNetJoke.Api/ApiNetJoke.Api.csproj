@@ -8,11 +8,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Refit.HttpClientFactory" Version="7.0.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\ApiNetJoke.Business\ApiNetJoke.Business.csproj" />
+    <ProjectReference Include="..\ApiNetJoke.Infrastructure\ApiNetJoke.Infrastructure.csproj" />
     <ProjectReference Include="..\ApiNetJoke.Models\ApiNetJoke.Models.csproj" />
   </ItemGroup>
 

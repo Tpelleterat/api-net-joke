@@ -6,7 +6,7 @@ namespace ApiNetJoke.Models
     {
         [Required]
         [RegularExpression("^\\d+(,\\d+)*$")]
-        public string Numbers { get; set; } = default!;
+        public required string Numbers { get; set; }
 
         [Required]
         [Range(0, 1)]
