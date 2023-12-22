@@ -14,6 +14,10 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 
+builder.Services.AddOptions<JwtSettings>()
+    .BindConfiguration("Jwt")
+    .ValidateDataAnnotations()
+    .ValidateOnStart();
 builder.Services.AddAuthentication(options =>
 {
     options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
