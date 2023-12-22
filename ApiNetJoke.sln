@@ -17,7 +17,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiNetJoke.Models", "src\Ap
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiNetJoke.Models.UnitTests", "tests\ApiNetJoke.Models.UnitTests\ApiNetJoke.Models.UnitTests.csproj", "{BA6904C1-4B32-487F-A4E2-F2ABACF8112B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiNetJoke.Infrastructure", "src\ApiNetJoke.Infrastructure\ApiNetJoke.Infrastructure.csproj", "{5A941EF9-71C0-47C0-894C-2BAAA6056571}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiNetJoke.Infrastructure", "src\ApiNetJoke.Infrastructure\ApiNetJoke.Infrastructure.csproj", "{5A941EF9-71C0-47C0-894C-2BAAA6056571}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4843C2E9-58A5-4B14-9C22-182C9ABF5B8A}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
