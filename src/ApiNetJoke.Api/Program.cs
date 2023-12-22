@@ -16,8 +16,6 @@ builder.Services.AddOptions<OfficialJokeApiSettings>()
     .BindConfiguration("OfficialJokeApi")
     .ValidateDataAnnotations()
     .ValidateOnStart();
-
-
 builder.Services.AddRefitClient<IOfficialJokeApi>()
     .ConfigureHttpClient((provider, httpClient) =>
     {
