@@ -1,6 +1,4 @@
 using ApiNetJoke.Api.Configuration;
-using ApiNetJoke.Business.Interfaces;
-using ApiNetJoke.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;

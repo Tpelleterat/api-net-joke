@@ -42,4 +42,7 @@ To quickly get started with the `api-net-joke` API, follow these simple steps:
      curl -X GET http://localhost:3000/your/endpoint -H "Authorization: Bearer YOUR_JWT_TOKEN"
      ```
 
+5. **Check Logs:**
+   - Logs, including request received, the response, and total time used to process the request, will be available in the specified log file located in the `Logs` directory with the format `apinetjoke-{Date}.txt`.
+
 Now you are ready to make authenticated requests to the `api-net-joke` API. Explore the available routes and have fun!

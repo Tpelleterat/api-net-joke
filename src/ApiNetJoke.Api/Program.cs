@@ -1,4 +1,5 @@
 ﻿using ApiNetJoke.Api.Configuration;
+using ApiNetJoke.Api.Middleware;
 using ApiNetJoke.Business;
 using ApiNetJoke.Business.Interfaces;
 using ApiNetJoke.Infrastructure;
@@ -11,6 +12,8 @@ using Refit;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Logging.AddFile("Logs/apinetjoke-{Date}.txt");
 
 builder.Services.AddControllers();
 
@@ -64,6 +67,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
+
+app.UseMiddleware<LoggingMiddleware>();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
